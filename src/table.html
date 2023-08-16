@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>Table</title>
+    <style>
+      table,
+      th,
+      td {
+        border: 1px solid black;
+        background-color: #fff;
+        border-collapse: collapse;
+      }
+
+      th,
+      td {
+        padding: 10px;
+      }
+
+      th {
+        background-color: #fddf95;
+      }
+
+      colgroup {
+        width: 250px;
+      }
+    </style>
+  </head>
+  <body>
+    <table id="minha_table" aria-describedby="minha_table_test">
+      <colgroup>
+        <col />
+
+        <col />
+
+        <col />
+      </colgroup>
+
+      <tr>
+        <th>Name</th>
+
+        <th>Job Title</th>
+
+        <th>Status</th>
+
+        <th>Email address</th>
+      </tr>
+
+      <tr>
+        <td>Anna Fitzgerald</td>
+
+        <td>Staff Writer</td>
+
+        <td>Aprovado</td>
+
+        <td>example@company.com</td>
+      </tr>
+
+      <tr>
+        <td>John Smith</td>
+
+        <td>Marketing Manager</td>
+
+        <td>Aprovado</td>
+
+        <td>example2@company.com</td>
+      </tr>
+
+      <tr>
+        <td>Zendaya Grace</td>
+
+        <td>CEO</td>
+
+        <td>Cancelado</td>
+
+        <td>example2@company.com</td>
+      </tr>
+    </table>
+  </body>
+</html>

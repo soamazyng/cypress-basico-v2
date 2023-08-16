@@ -26,9 +26,12 @@
 
 // -- This will fill all mandatory fields and submit
 Cypress.Commands.add("fillMandatoryFieldsAndSubmit", () => {
-  cy.get("#firstName").type("Fulano de Tal 123", { delay: 0 });
-  cy.get("#lastName").type("da Silva", { delay: 0 });
+  const longText =
+    "Veniam enim eu consectetur velit excepteur anim. Commodo incididunt ex sit et labore quis aliquip voluptate dolor ad. Consectetur dolore exercitation non labore aliqua qui laboris culpa est tempor pariatur.";
+
+  cy.get("#firstName").type("Fulano de Tal 123");
+  cy.get("#lastName").type("da Silva");
   cy.get("#email").type("teste@teste.com.br");
-  cy.get("#open-text-area").type("Teste de mensagem");
+  cy.get("#open-text-area").type(longText, { delay: 0 });
   cy.get("@submitBtn").click();
 });
